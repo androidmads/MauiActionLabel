@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiActionLabel.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <HorizontalStackLayout>
+                <Label
+                    Text="To know more about .NET MAUI "
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="Default"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Text="Visit Here"
+                    TextDecorations="Underline"
+                    TextColor="Blue"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="Default"
+                    HorizontalOptions="Center" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnUrlClicked"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
